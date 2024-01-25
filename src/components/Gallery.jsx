@@ -33,7 +33,7 @@ const Gallery = () => {
         <div className="max-w-full flex items-center justify-center mt-4 space-x-4">
           {thumbnailImages.map((thumbnail, index) => (
             <img
-              className={`sm:w-[100px] sm:h-[100px] h-[70px] w-[70px]
+              className={`lg:w-[100px] lg:h-[100px]  sm:h-[70px] sm:w-[70px] w-[60px] h-[60px]
                transition-all duration-150 hover:opacity-[0.6]  
               rounded-[10px] object-cover cursor-pointer 
               ${thumbnail === selectedImage ? 'opacity-[0.6]  border-[3px] border-orange-500' : ''}`}
@@ -81,10 +81,11 @@ const Gallery = () => {
                      <img onClick={increase} className="cursor-pointer hover:opacity-[0.6]" src={plus} alt="" />
                 </div>
                 <button
+
                  onClick={handleShow}
                   type="button"
                    style={{backgroundColor:'hsl(26, 100%, 55%)'}} 
-                className="flex-1 flex items-center
+                className="flex-1 flex items-center whitespace-nowrap
                  text-white h-[50px] justify-center gap-x-6 rounded-md 
                   transition-all duration-200 hover:opacity-[0.7] py-4" >
                     <img style={{color:'white'}} className="invert(100%) " src={cartIcon} alt="" />

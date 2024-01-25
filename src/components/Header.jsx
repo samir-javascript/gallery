@@ -31,7 +31,7 @@ const handleCloseMenu = ()=>  {
   return (
    <>
     <header className="max-w-[1200px] mx-auto 
-     py-4 border-b  border-[hsl(223, 64%, 98%)] sm:flex hidden items-center justify-between ">
+     py-4 px-3 border-b  border-[hsl(223, 64%, 98%)] sm:flex hidden items-center justify-between ">
          <div className='mr-8'>
             {/* logo goes here */}
              <img className='cursor-pointer' src={logo} alt="" />
