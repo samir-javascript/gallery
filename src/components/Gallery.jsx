@@ -17,7 +17,7 @@ const Gallery = () => {
   };
   
   return (
-  <div className="pb-4 max-w-[1440px] mx-auto mt-[55px] flex  sm:flex-row flex-col items-center
+  <div className="pb-4 max-w-[1200px] mx-auto mt-[55px] flex  sm:flex-row flex-col items-center
    justify-between gap-12">
       <div className="sm:mx-[30px] mx-[10px]">
         <div className="sm:w-[450px] w-auto h-[400px]
@@ -80,7 +80,10 @@ const Gallery = () => {
                      
                      <img onClick={increase} className="cursor-pointer hover:opacity-[0.6]" src={plus} alt="" />
                 </div>
-                <button onClick={handleShow}  type="button" style={{backgroundColor:'hsl(26, 100%, 55%)'}} 
+                <button
+                 onClick={handleShow}
+                  type="button"
+                   style={{backgroundColor:'hsl(26, 100%, 55%)'}} 
                 className="flex-1 flex items-center
                  text-white h-[50px] justify-center gap-x-6 rounded-md 
                   transition-all duration-200 hover:opacity-[0.7] py-4" >

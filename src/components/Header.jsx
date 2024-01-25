@@ -1,10 +1,7 @@
 import logo from '@/assets/images/logo.svg'
 import avatar from '@/assets/images/image-avatar.png'
 import cartIcon from '@/assets/images/icon-cart.svg'
-
 import MobileHeader from './MobileHeader'
-
-
 import ModalComponent from './ModalComponent'
 import { useGlobalContext } from '@/mycontext'
 const Header = () => {
@@ -22,7 +19,7 @@ const Header = () => {
    document.body.classList.toggle('overlay')
 }
 //const [show, setShow] = useState(false);
-const {show,setShow, handleShow} = useGlobalContext()
+const {show,setShow, handleShow,amount} = useGlobalContext()
 
 //const handleShow = () => setShow(true);
 const handleCloseMenu = ()=>  {
@@ -30,10 +27,10 @@ const handleCloseMenu = ()=>  {
   menu.classList.remove('show-menu')
   document.body.classList.remove('overlay')
 }
-const {amount} = useGlobalContext()
+
   return (
    <>
-    <header className="max-w-[1440px] mx-auto 
+    <header className="max-w-[1200px] mx-auto 
      py-4 border-b  border-[hsl(223, 64%, 98%)] sm:flex hidden items-center justify-between ">
          <div className='mr-8'>
             {/* logo goes here */}
