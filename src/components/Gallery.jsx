@@ -88,7 +88,7 @@ const Gallery = () => {
                 className="flex-1 flex items-center whitespace-nowrap
                  text-white h-[50px] justify-center gap-x-6 rounded-md 
                   transition-all duration-200 hover:opacity-[0.7] py-4" >
-                    <img style={{color:'white'}} className="invert(100%) " src={cartIcon} alt="" />
+                    <img style={{color:'white'}} className="invert(100%) sm:hidden block " src={cartIcon} alt="" />
                     <p className="capitalize font-semibold text-white text-[16px] ">add to cart</p>
                 </button>
             </div>
